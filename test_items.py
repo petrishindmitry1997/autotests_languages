@@ -8,7 +8,7 @@ link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
 def test_add_to_cart_button_presence(browser):
     browser.get(link)
-    #time.sleep(30)
+    time.sleep(30)
 	# search button
     add_to_cart_button = WebDriverWait(browser, 10).until(
 		EC.presence_of_element_located((By.CLASS_NAME, "btn-add-to-basket"))
